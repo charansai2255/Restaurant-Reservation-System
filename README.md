@@ -1,22 +1,18 @@
 # 🍽️ Restaurant Reservation System (MERN Stack)
 
-A full-stack Restaurant Reservation System built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).  
-This application allows users to browse restaurants, make table reservations, and manage bookings efficiently.
+A Full-Stack Restaurant Reservation System built using the MERN Stack (MongoDB, Express.js, React.js, Node.js).
+
+This application allows users to securely register, log in, and reserve tables, while administrators can manage reservations through a dedicated dashboard.
 
 ---
 
-## 🚀 Live Demo
-(Add deployed link here if available)
-
----
-
-## 🛠️ Tech Stack
+## 🚀 Tech Stack
 
 ### 🌐 Frontend
-- React.js
-- Vite
-- Axios
+- React.js (Vite)
 - React Router DOM
+- Axios
+- Context API
 - CSS
 
 ### 🖥️ Backend
@@ -32,21 +28,38 @@ This application allows users to browse restaurants, make table reservations, an
 ## ✨ Features
 
 ### 👤 User Features
-- User registration & login (JWT authentication)
-- Secure password hashing
-- Browse menu
-- Make reservations
-- View reservation history
-- Responsive UI
+- User Registration & Login
+- Secure Authentication (JWT)
+- Password Hashing (bcrypt)
+- Browse Menu
+- Make Reservations
+- View Reservation History
+- Responsive User Interface
 
 ### 🏢 Admin Features
-- Admin login
-- Admin dashboard
-- View all reservations
-- Manage user bookings
-- Restaurant management controls
+- Admin Login
+- Dashboard Overview
+- View All Reservations
+- Manage Bookings
+- Monitor Users
 
 ---
 
 ## 📂 Project Structure
+Restaurant-Reservation-System
+│
+├── Backend
+│ ├── config
+│ ├── controllers
+│ ├── middleware
+│ ├── models
+│ ├── routes
+│ ├── server.js
+│ └── .env (not included in repo)
+│
+└── Frontend
+├── public
+├── src
+├── vite.config.js
+└── package.json
 
