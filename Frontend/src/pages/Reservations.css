@@ -1,0 +1,137 @@
+.reservations-page {
+  min-height: 100vh;
+  background-color: var(--bg-light);
+}
+
+.reservations-header {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  color: var(--text-light);
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.reservations-header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.reservations-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.reservation-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.reservation-form-wrapper {
+  width: 100%;
+}
+
+.reservation-form {
+  padding: 40px;
+}
+
+.reservation-form h2 {
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.btn-block {
+  width: 100%;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.btn-block:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.reservation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card {
+  padding: 25px;
+}
+
+.info-card h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.info-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-card ul li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #555;
+  line-height: 1.6;
+}
+
+.info-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.info-card p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.info-card p strong {
+  color: var(--text-dark);
+}
+
+@media (max-width: 968px) {
+  .reservation-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .reservations-header h1 {
+    font-size: 2rem;
+  }
+
+  .reservations-header p {
+    font-size: 1rem;
+  }
+
+  .reservation-form {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation-form h2 {
+    font-size: 1.5rem;
+  }
+}
